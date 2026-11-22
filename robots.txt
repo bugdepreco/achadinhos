@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bugdepreco.github.io/achadinhos/sitemap.xml
