@@ -62,6 +62,20 @@ el('g').innerHTML=r.map(o=>`<div class="of${o.novo?' nv':''}">${o.novo?'<span cl
 <div class="pz"><b>${brl(o.preco)}</b>${o.off?`<s>${brl(o.de)}</s><span class="off">-${o.off}%</span>`:''}</div>
 <div class="vis">🕒 visto em ${o.quando} · ${o.loja}</div><a class="bt" href="${o.link}" rel="sponsored nofollow" target="_blank">Ver preço agora →</a></div>`).join('')||'<p>Nenhuma oferta com esses filtros.</p>';}
 ['q','lj','ct','mx','od'].forEach(i=>el(i).addEventListener('input',render));render();
-</script>
+</script><script>window.AVISOS=[{"id": "SHP7Kyky7Jvkc", "link": "https://s.shopee.com.br/7Kyky7Jvkc", "tit": "🔥 +1 mil vendidos: Árvore de Natal espiral LED ", "sub": "⭐ 4,8 · 466 avaliações na loja"}, {"id": "SHN195410740", "link": "https://onelink.shein.com/61/68zzmbhhede2?ismg_ol=IgPL6XUw1MO_01_KOC-C", "tit": "🆕 Novo: Kit 12 pares de meias soquete unisse", "sub": "R$ 8,68 · visto em 22/11 às 08:04"}, {"id": "SHPLozw6IGza", "link": "https://s.shopee.com.br/Lozw6IGza", "tit": "🆕 Novo: Macaquinho fitness costas abertas", "sub": "R$ 44,99 · visto em 22/11 às 06:53"}, {"id": "SHP4LL8hUfu1v", "link": "https://s.shopee.com.br/4LL8hUfu1v", "tit": "🆕 Novo: Fone de ouvido sem fio com cancelame", "sub": "R$ 42,89 · visto em 22/11 às 06:53"}, {"id": "SHN510575554", "link": "https://onelink.shein.com/61/68zzo4lhoqcj?ismg_ol=3KOtDUW2pMg_01_KOC-C", "tit": "🆕 Novo: Kit meias térmicas forradas peluciad", "sub": "R$ 11,53 · visto em 22/11 às 08:04"}, {"id": "SHN195410740", "link": "https://onelink.shein.com/61/68zzmbhhede2?ismg_ol=IgPL6XUw1MO_01_KOC-C", "tit": "⚡ -83%: Kit 12 pares de meias soquete unis", "sub": "R$ 50,00 → R$ 8,68 · visto em 22/11 às 08:04"}, {"id": "SHPLozw6IGza", "link": "https://s.shopee.com.br/Lozw6IGza", "tit": "⚡ -80%: Macaquinho fitness costas abertas", "sub": "R$ 229,99 → R$ 44,99 · visto em 22/11 às 06:53"}, {"id": "SHP4LL8hUfu1v", "link": "https://s.shopee.com.br/4LL8hUfu1v", "tit": "⚡ -78%: Fone de ouvido sem fio com cancela", "sub": "R$ 199,00 → R$ 42,89 · visto em 22/11 às 06:53"}, {"id": "SHN510575554", "link": "https://onelink.shein.com/61/68zzo4lhoqcj?ismg_ol=3KOtDUW2pMg_01_KOC-C", "tit": "⚡ -77%: Kit meias térmicas forradas peluci", "sub": "R$ 49,99 → R$ 11,53 · visto em 22/11 às 08:04"}];</script><a id="toast" rel="sponsored nofollow" target="_blank"><img id="tImg" alt=""><div><b id="tTit"></b>
+<span id="tSub"></span></div><button id="tX" aria-label="Fechar">×</button></a>
+<style>#toast{position:fixed;left:16px;bottom:16px;z-index:50;display:flex;gap:10px;align-items:center;background:#fff;
+border-radius:12px;padding:10px 30px 10px 12px;max-width:min(330px,calc(100vw - 32px));box-shadow:0 6px 20px rgba(0,0,0,.18);
+font:14px system-ui;color:#1d232a;text-decoration:none;transform:translateY(160%);transition:transform .4s}
+#toast.on{transform:none}#toast img{width:44px;height:44px;object-fit:contain;border-radius:8px;flex:none}
+#toast span{display:block;color:#5b6570;font-size:12px}#tX{position:absolute;top:2px;right:4px;border:0;background:none;
+font-size:18px;color:#999;cursor:pointer}@media(prefers-reduced-motion:reduce){#toast{transition:none}}</style>
+<script>(()=>{const A=window.AVISOS||[];if(!A.length)return;let i=0,parar=false;const t=document.getElementById('toast');
+try{parar=sessionStorage.getItem('semAviso')=='1'}catch(e){}
+document.getElementById('tX').onclick=e=>{e.preventDefault();e.stopPropagation();t.classList.remove('on');parar=true;
+try{sessionStorage.setItem('semAviso','1')}catch(e){}};
+function m(){if(parar)return;const a=A[i++%A.length];t.href=a.link;tImg.src='p-'+a.id+'.jpg';tTit.textContent=a.tit;
+tSub.textContent=a.sub;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),5000)}
+setTimeout(m,3000);setInterval(m,9000)})();</script>
 <p class="av">Links de afiliado: posso ganhar uma comissão se você comprar, sem custo extra para você.
 Preços e estoque mudam a toda hora; confira sempre na loja antes de comprar.</p></div></body></html>
